@@ -5,9 +5,9 @@ mansion-adventure is a text-based adventure game where the player needs to pick 
 ## Controls
 Command | What it does
 ------------ | -------------
-"north", "south", "east", "west" | move in a particular direction
-"take" | takes an item
-"drop" | drops an item
+"go" + "north", "south", "east", "west" | move in a particular direction
+"take" + item_name | takes an item
+"drop" + item_name | drops an item
 other commands | performs a custom action
 
 ## Dependecies
