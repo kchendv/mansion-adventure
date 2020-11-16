@@ -1,0 +1,6 @@
+{
+  "action": "Unlock door",
+  "controls": [0],
+  "requiredItems": ["key"],
+  "isRepeatable": false
+}

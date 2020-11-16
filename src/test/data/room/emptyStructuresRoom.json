@@ -1,0 +1,11 @@
+{
+  "id": 0,
+  "message": "You are at the entrance of a mansion. To the north, a narrow corridor stretches into the foyer.",
+  "items": ["key", "pen"],
+  "structures": [],
+  "connections": [{
+    "id": 2,
+    "direction": "North",
+    "lockId": 3
+  }]
+}

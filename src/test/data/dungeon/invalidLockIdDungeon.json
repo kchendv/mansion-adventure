@@ -1,0 +1,210 @@
+{
+  "rooms": [
+    {
+      "id": 0,
+      "message": "You are at the entrance of a mansion. To the north, a narrow corridor stretches into the foyer.",
+      "items": ["key","pen"],
+      "structures": [{
+        "action": "Unlock door",
+        "successMessage": "You used the key to unlock the door.",
+        "controls": [4],
+        "requiredItems": ["key"],
+        "isRepeatable": false
+      }],
+      "connections": [{
+        "id": 2,
+        "direction": "North"
+      },
+        {
+          "id": 1,
+          "direction": "South",
+          "lockId": 100
+        }]
+    },
+    {
+      "id": 1,
+      "message": "",
+      "items": [],
+      "structures": [],
+      "connections": [{
+        "id": 0,
+        "direction": "North",
+        "lockId": 4
+      }]
+    },
+    {
+      "id": 2,
+      "message": "You stand in the foyer... there are two doors, one to the left and one to the right.\nThere is also a winding stairway, which leads you further north.",
+      "items": [],
+      "structures": [],
+      "connections": [{
+        "id": 6,
+        "direction": "North"
+      },{
+        "id": 3,
+        "direction": "West"
+      },{
+        "id": 0,
+        "direction": "South"
+      },{
+        "id": 4,
+        "direction": "East"
+      }]
+    },
+    {
+      "id": 3,
+      "message": "You find yourself in a kitchen. From the window, a stream of light cuts\nthrough the dusty air, but it is too high up for you to see what's outside.",
+      "items": [],
+      "structures": [],
+      "connections": [{
+        "id": 2,
+        "direction": "East"
+      }]
+    },
+    {
+      "id": 4,
+      "message": "You are in the living room. You see scattered documents all over the table\nand on the floor... whoever lived here seems to have left in a hurry.\nNext to one of the couches, another door leads you further inside.",
+      "items": [],
+      "structures": [
+        {
+          "action": "Unlock door",
+          "successMessage": "You used the key to unlock the door.",
+          "controls": [0],
+          "requiredItems": ["key"],
+          "isRepeatable": false
+        }
+      ],
+      "connections": [{
+        "id": 2,
+        "direction": "West"
+      },{
+        "id": 5,
+        "direction": "East",
+        "lockId": 0
+      }]
+    },
+    {
+      "id": 5,
+      "message": "You are in a small room with white walls on all four sides. On the back wall\n, there is a light switch that seems uncharacteristically modern.",
+      "items": [],
+      "structures": [{
+        "action": "Flip switch",
+        "successMessage": "You flipped the switch. You hear a faint rumble coming from upstairs.",
+        "controls": [1,2],
+        "requiredItems": [],
+        "isRepeatable": true
+      }],
+      "connections": [{
+        "id": 4,
+        "direction": "West",
+        "lockId": 0
+      }]
+    },
+    {
+      "id": 6,
+      "message": "You are at the top of the stairway. There are three doors - the ones to the north\nand east seem uncharacteristically modern.",
+      "items": [],
+      "structures": [],
+      "connections": [{
+        "id": 9,
+        "direction": "North",
+        "lockId": 2
+      },{
+        "id": 7,
+        "direction": "West"
+      },{
+        "id": 2,
+        "direction": "South"
+      },{
+        "id": 8,
+        "direction": "East",
+        "lockId": 1
+      }]
+    },
+    {
+      "id": 7,
+      "message": "You are in a bedroom. The paintings on the wall make you question the taste of the mansion's owner.",
+      "items": ["key"],
+      "structures": [],
+      "connections": [{
+        "id": 6,
+        "direction": "East"
+      }]
+    },
+    {
+      "id": 8,
+      "message": "You are in the study. The bookshelves are lined with books that you have never heard of.",
+      "items": ["spell"],
+      "structures": [],
+      "connections": [{
+        "id": 6,
+        "direction": "West",
+        "lockId": 1
+      }]
+    },
+    {
+      "id": 9,
+      "message": "You are in a dark room. In the middle lies an ominous stone bowl, on which foreign letters are engraved.\n",
+      "items": [],
+      "structures": [
+        {
+          "action": "Cast spell",
+          "successMessage": "You can barely make out the hastily scribbled letters on the page, and thankfully it's in English.\nAs you recite the spell, a rain cloud coalesces above you and begins pouring down into the stone bowl.\nAs the bowl fills, a stone door to the east slides open.",
+          "controls": [3],
+          "requiredItems": ["spell"],
+          "isRepeatable": false
+        }
+      ],
+      "connections": [{
+        "id": 6,
+        "direction": "South",
+        "lockId": 2
+      },{
+        "id": 10,
+        "direction": "East",
+        "lockId": 3
+      }]
+    },
+    {
+      "id": 10,
+      "message": "You are in a room filled with pipes and overhanging wires. Amongst the clutter, there is a button labeled 'escape'.",
+      "items": [],
+      "structures": [
+        {
+          "action": "Push button",
+          "successMessage": "You pushed the button. You hear a faint rumble coming from downstairs.",
+          "controls": [4],
+          "requiredItems": [],
+          "isRepeatable": true
+        }
+      ],
+      "connections": [{
+        "id": 9,
+        "direction": "West",
+        "lockId": 3
+      }]
+    }
+  ],
+  "locks": [
+    {
+      "id": 0,
+      "isLocked": true
+    },
+    {
+      "id": 1,
+      "isLocked": true
+    },
+    {
+      "id": 2,
+      "isLocked": false
+    },
+    {
+      "id": 3,
+      "isLocked": true
+    },
+    {
+      "id": 4,
+      "isLocked": true
+    }
+  ]
+}

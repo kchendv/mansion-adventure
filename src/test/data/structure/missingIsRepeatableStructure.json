@@ -1,0 +1,6 @@
+{
+  "action": "Unlock door",
+  "successMessage": "You used the key to unlock the door.",
+  "controls": [0],
+  "requiredItems": ["key"]
+}
