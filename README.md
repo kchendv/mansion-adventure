@@ -8,7 +8,7 @@ Command | What it does
 "north", "south", "east", "west" | move in a particular direction
 "take" | takes an item
 "drop" | drops an item
-"(other commands)" | performs a custom action
+other commands | performs a custom action
 
 ## Dependecies
 * Java SE 14
