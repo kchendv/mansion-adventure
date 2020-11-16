@@ -1,6 +1,6 @@
 # mansion-adventure
 ## Summary
-masion-adventure is a text-based adventure game where the player needs to pick up items, unlock doors and cast spells in order to escape  
+mansion-adventure is a text-based adventure game where the player needs to pick up items, unlock doors and cast spells in order to escape  
 
 ## Controls
 Command | What it does
