@@ -10,7 +10,7 @@ Command | What it does
 "drop" + item_name | drops an item
 other commands | performs a custom action
 
-## Dependecies
+## Dependencies
 * Java SE 14
 * JUnit
 * GSON
